@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
- * main - Entry Point
- * puts: prints stuff
- * char var[num] : char defines character
+ * main - prints String
+ *
+ * Return: returns if script runs succesfully
  */
 int main(void)
 {
