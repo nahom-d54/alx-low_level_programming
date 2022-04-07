@@ -1,17 +1,17 @@
 #include <stdio.h>
 
 
-/* 
+/** 
  * main - Entry Point
  *
- * puts is same as printf i think
+ * puts: prints stuff
  *
- * char var[num] : char defines character and num is number of array -1 in the variale
+ * char var[num] : char defines character
  *
  */
 int main(void)
 {
-	char toPrint[100] = "\"Programming is like building a multilingual puzzle\n";
+	char toPrint[100] = "\"Programming is like building a multilingual puzzle";
 
 	puts(toPrint);
 

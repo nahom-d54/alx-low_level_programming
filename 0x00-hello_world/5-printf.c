@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-/*
+/**
  * main - is the main function that is gonna be called
  * char var[num] is a variable set to var that is 100 arrray long
  * printf is a function that prints what is given to it
