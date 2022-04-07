@@ -11,7 +11,7 @@
  */
 int main(void)
 {
-	char toPrint[100] = "\"Programming is like building a multilingual puzzle";
+	char toPrint[100] = "\"Programming is like building a multilingual puzzle\n";
 
 	puts(toPrint);
 
