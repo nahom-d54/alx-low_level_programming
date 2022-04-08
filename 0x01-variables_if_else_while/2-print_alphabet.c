@@ -1,5 +1,5 @@
 #include <stdlib.h>
-#include <time.h>
+#include <stdio.h>
 /**
  * main - prints alphabets
  * small letters
