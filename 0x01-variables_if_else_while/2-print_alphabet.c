@@ -17,4 +17,5 @@ int main(void)
 		putchar(abc[a]);
 		putchar('\n');
 	}
+	return (0);
 }
