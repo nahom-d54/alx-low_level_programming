@@ -1,8 +1,8 @@
 #include <stdlib.h>
 #include <time.h>
-#include <stdio.h>
 /**
- * main - prints last digit
+ * main - prints alphabets
+ * small letters
  *
  * Return: returns 0
  */
@@ -10,10 +10,9 @@ int main(void)
 {
 	char abc[] = "abcdefghijklmnopqrstuvwxyz";
 
-	int a = 0;
-
-	for (a; a < 25; a++)
+	for (int a = 0; a < 26; a++)
 	{
 		putchar(abc[a]);
+		putchar('\n');
 	}
 }
