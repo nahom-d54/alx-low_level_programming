@@ -1,29 +1,28 @@
 #include "main.h"
 /**
- * jack_bauer - 24 hours a day
+ * void times_table - time tabel by 9
  */
-void jack_bauer(void)
+void times_table(void)
 {
 	int a, b;
 
-	for (a = 0; a < 9; a++)
+	for (a = 0; a < 10; a++)
 	{
-		for (b = 0; b < 9; b++)
+		for (b = 0; b < 10; b++)
 		{
 			int mult;
 
 			mult = a * b;
-
 			if (mult > 9)
 			{
-				_putchar('0' + (mult / 10));
-				_putchar('0' + (mult % 10));
-			}else
-				_putchar('0' + mult);
+				 putchar('0' + (mult / 10));
+				 putchar('0' + (mult % 10));
+			} else
+				putchar('0' + mult);
 			if (b != 9)
 			{
-			_putchar(',');
-			_putchar(' ');
+				putchar(',');
+				putchar(' ');
 			}
 		}
 	}
