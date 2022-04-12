@@ -14,7 +14,7 @@ int print_sign(int n)
 		_putchar('+');
 	} else if (n < 0)
 	{
-		stat = -1
+		stat = -1;
 		_putchar('-');
 	} else
 	{
