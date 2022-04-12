@@ -1,2 +1,2 @@
-#include "_putchar"
+#include "_putchar.c"
 #include <stdio.h>
