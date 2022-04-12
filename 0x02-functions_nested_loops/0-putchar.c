@@ -13,5 +13,6 @@ int main(void)
 	for (num = 0; num < 8; num++)
 	{
 		_putchar(put[num]);
+	}
 	return (0);
 }
