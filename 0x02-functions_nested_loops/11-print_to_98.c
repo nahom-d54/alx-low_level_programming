@@ -13,11 +13,11 @@ void print_to_98(int n)
 	{
 		if (n > 9 || n < -9)
 		{
-			_putchar('0' + (n / 10));
+			_putchar('0' + (n / 100));
+			_putchar('0' + (n / 10) % 10);
 			_putchar('0' + (n % 10));
 			_putchar(',');
-			_putchar(' ');
-			
+			_putchar(' ');	
 		} else
 		{
 			_putchar('0' + n);
@@ -28,12 +28,19 @@ void print_to_98(int n)
 	}
 	while (n > 98)
 	{
-		_putchar('0' + (n / 100));
-		_putchar('0' + (n / 10) % 10);
-		_putchar('0' + (n % 10));
-		_putchar(',');
-		_putchar(' ');
-		n--;
+		if (n > 99)
+		{
+			_putchar('0' + (n / 100));
+			_putchar('0' + (n / 10) % 10);
+			_putchar('0' + (n % 10));
+			_putchar(',');
+			_putchar(' ');
+			n--;
+		} else
+		{
+			_putchar('0' + (n / 10));
+			_putchar('0' + (n % 10));
+		}
 	}
 	if (n == 98)
 	{
