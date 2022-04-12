@@ -1,5 +1,5 @@
 #include "_putchar.c"
-#include <stdio.h>
+#include "main.h"
 /**
  * main - prints alphabets
  * small letters
