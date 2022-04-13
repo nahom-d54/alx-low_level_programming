@@ -1,9 +1,8 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * _abs - returns the absolute value of n
- * @n : character to check the parameter
- * Return: returns +ve number of input
+ * main - returns the absolute value of n
+ * Return: returns 0 as output
  */
 int main(void)
 {
