@@ -1,7 +1,7 @@
 #include "main.h"
 /**
 * _isupper - checks if upper
-* @c - character of alphabet
+* @c : character of alphabet
 * Return: 0 if false 1 if true
 */
 
