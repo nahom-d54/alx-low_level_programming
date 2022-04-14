@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-* mort_numbers - prints 1 to 14 1 times
+* more_numbers - prints 1 to 14 n times
 */
 void more_numbers(void)
 {

@@ -1,6 +1,7 @@
 #include "main.h"
 /**
 * print_line - prints underscore n times
+* @n: number of underscores
 */
 void print_line(int n)
 {

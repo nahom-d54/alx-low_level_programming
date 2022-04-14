@@ -1,20 +1,24 @@
 #include "main.h"
+
 /**
-* mort_numbers - prints 1 to 14 1 times
-*/
-void more_numbers(void)
+ * print_diagonal - a function that draws a diagonal line on the terminal.
+ * @n: An input integer
+ * Return: Always 0
+ */
+void print_diagonal(int n)
 {
+	int i = 0, j;
+
 	if (n > 0)
 	{
-		int a;
-
-		for (a = 1; a < n; a++)
+		for (; i < n; i++)
 		{
-			_putchar(' ');
-			
-		}
-		_putchar('\\');
+			for (j = 0; j < i; j++)
+				_putchar(' ');
+		_putchar(92);
 		_putchar('\n');
-	} else
+		}
+	}
+	else
 		_putchar('\n');
 }

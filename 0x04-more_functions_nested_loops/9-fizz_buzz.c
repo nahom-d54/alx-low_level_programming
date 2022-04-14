@@ -1,7 +1,7 @@
 #include "main.h"
 /**
- * main - Fiss buzz
- * Return : returns 0
+ * main - Fiss buzz function
+ * Return: returns 0
  */
 int main(void)
 {
@@ -16,7 +16,8 @@ int main(void)
 		else if (a % 5 == 0)
 			printf("Buzz");
 		else
-			printf("%d",a);
+			printf("%d", a);
 	}
-	printf("\n");s
+	printf("\n");
+	return (0);
 }
