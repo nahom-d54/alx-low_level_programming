@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-* int _isupper - checks if upper
+* _isupper - checks if upper
 * @c - character of alphabet
 * Return: 0 if false 1 if true
 */
