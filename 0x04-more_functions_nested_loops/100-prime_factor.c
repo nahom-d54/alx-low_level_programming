@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * main - Fiss buzz function
+ * main - prime number
  * Return: returns 0
  */
 int main(void)
@@ -14,9 +14,10 @@ int main(void)
 		if (a % b)
 			b++;
 		else
-			a //= b;
+			a /= b;
 	}
-	return (a);
+	printf("%d", a);
+	return (0);
 }
 
 
