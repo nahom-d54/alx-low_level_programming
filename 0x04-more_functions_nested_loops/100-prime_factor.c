@@ -1,21 +1,26 @@
-#include "main.h"
+#include <stdio.h>
+#include <math.h>
 /**
- * main - prime number
- * Return: returns 0
+ * main - prime numbers
+ *
+ * Return: Always print 0.
  */
 int main(void)
 {
-	int a = 612852475143;
 
-	int b = 2;
+unsigned int long n = 612852475143, a = (int) sqrt(n);
 
-	while (b * b <= a)
+while (1)
+{
+
+	if (n % a == 0)
 	{
-		if (a % b)
-			b++;
-		else
-			a /= b;
+		printf("%lu \n", n / a);
+		break;
 	}
-	printf("%d", a);
-	return (0);
+	a--;
+
+}
+
+return (0);
 }
