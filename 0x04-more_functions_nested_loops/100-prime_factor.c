@@ -19,8 +19,6 @@ while (1)
 		break;
 	}
 	a--;
-
 }
-
 return (0);
 }
