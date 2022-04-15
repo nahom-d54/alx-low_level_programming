@@ -8,17 +8,17 @@
 int main(void)
 {
 
-	int long long n = 612852475143, a = (int) sqrt(n);
+int long long n = 612852475143, a = (int) sqrt(n);
 
-	while (1)
+while (1)
+{
+
+	if (n % a == 0)
 	{
-
-		if (n % a == 0)
-		{
-			printf("%lu\n", n / a);
-			break;
-		}
-		a--;
+		printf("%lu\n", n / a);
+		break;
 	}
-	return (0);
+	a--;
+}
+return (0);
 }
