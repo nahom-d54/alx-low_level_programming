@@ -5,7 +5,7 @@
  */
 int main(void)
 {
-	int a = 1231952;
+	int a = 612852475143;
 
 	int b = 2;
 
@@ -19,5 +19,3 @@ int main(void)
 	printf("%d", a);
 	return (0);
 }
-
-
