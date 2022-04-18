@@ -12,13 +12,13 @@ void puts_half(char *str)
 
 	while (str[a] != '\0')
 	{
-		a++
+		a++;
 	}
 	half = a / 2;
 	while (half > -1)
 	{
 		_putchar(str[a - half]);
-		half--
+		half--;
 
 	}
 }

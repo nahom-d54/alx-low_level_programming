@@ -4,6 +4,8 @@
  * _strlen - counts length of string
  *
  * @s: string array characters
+ *
+ * Return: returns string length int
  */
 int _strlen(char *s)
 {

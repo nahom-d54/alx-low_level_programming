@@ -1,6 +1,7 @@
 #ifndef _MAIN_H_ 
 #define _MAIN_H_
 #include "main.h"
+#include <stdio.h>
 
 void reset_to_98(int *n);
 int _putchar(char);
