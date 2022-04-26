@@ -7,8 +7,8 @@
  */
 char *_strstr(char *haystack, char *needle)
 {
-	int x = 0;
-	int y;
+	unsigned int x = 0;
+	unsigned int y;
 
 	while (accept[x] != '\0')
 	{
@@ -20,5 +20,5 @@ char *_strstr(char *haystack, char *needle)
 			}
 		}
 	}
-	return (NULL);
+	return (0);
 }
