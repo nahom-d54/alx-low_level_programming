@@ -1,24 +1,32 @@
 #include "main.h"
+
 /**
- * _strstr - a function that locates a substring.
- * @haystack: where to look
- * @needle: what to look
- * Return: returns poiner ot null
- */
+* _strstr - function locate
+* @haystack: pointer to char
+* @needle: pointer to char
+* Return: 0
+*/
+
 char *_strstr(char *haystack, char *needle)
 {
-	unsigned int x = 0;
-	unsigned int y;
+	char *result = haystack, *fneedle = needle;
 
-	while (accept[x] != '\0')
+	while (*haystack)
 	{
-		for (y = 0; s[y] != '\0'; y++)
+		while (*needle)
 		{
-			if (accept[x] == s[y] && accept[x + 1] == s[y + 1])
+			if (*haystack++ != *needle++)
 			{
-				return (s + y);
+				break;
 			}
 		}
+		if (!*needle)
+		{
+			return (result);
+		}
+		needle = fneedle;
+		result++;
+		haystack = result;
 	}
 	return (0);
 }
