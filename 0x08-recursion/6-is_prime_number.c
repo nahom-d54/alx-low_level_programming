@@ -15,8 +15,7 @@ int is_it_really(int n, int c)
 			return (0);
 		is_it_really(n, c + 1);
 	}
-	else
-		return (1);
+	return (1);
 
 }
 /**
