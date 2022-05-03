@@ -1,3 +1,5 @@
+#include "main.h"
+#include <stdlib.h>
 /**
  * alloc_grid - allocates grid
  * @width: width of the array
