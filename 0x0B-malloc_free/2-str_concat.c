@@ -26,7 +26,7 @@ char *str_concat(char *s1, char *s2)
 	{
 		allocate[a] = s1[a];
 	}
-	while (a < size2)
+	while (a < (size2 + size1))
 	{
 		a++;
 		allocate[a] = s2[a];
