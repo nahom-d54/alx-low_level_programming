@@ -10,7 +10,7 @@
 char *str_concat(char *s1, char *s2)
 {
 	unsigned int size1 = 0, size2 = 0;
-	unsigned int a;
+	unsigned int a = 0;
 	char *allocate;
 
 	while (s1[size1] != '\0')
@@ -22,15 +22,16 @@ char *str_concat(char *s1, char *s2)
 		size2++;
 	}
 	allocate = malloc(sizeof(char) * (size1 + size2) + 1);
-	for (a = 0; a < size1; a++)
+	while (a < size1)
 	{
 		allocate[a] = s1[a];
+		a++;
 	}
 	while (a < (size2 + size1))
 	{
-		a++;
 		allocate[a] = s2[a];
+		a++;
 	}
-	allocate[a + 1] = '\0';
+	allocate[a] = '\0';
 	return (allocate);
 }
