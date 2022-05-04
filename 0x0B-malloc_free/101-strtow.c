@@ -13,7 +13,7 @@ char **strtow(char *str)
 	char **space;
 	int sp = 0;
 
-	if (str == NULL || str == "")
+	if (str == NULL)
 		return (NULL);
 
 	while (str[words] != '\0')
