@@ -1,3 +1,5 @@
+#include "main.h"
+#include <stdlib.h>
 /**
  * **strtow - splits a string into words
  * @str: string to split
@@ -10,7 +12,7 @@ char **strtow(char *str)
 	unsigned int words = 0, count = 0, l, alloc = 0;
 	char *space;
 
-	if (str == 0 || str == "")
+	if (str == NULL || str == "")
 		return (NULL);
 
 	while (str[words] != '\0')
@@ -22,7 +24,7 @@ char **strtow(char *str)
 		words++;
 	}
 	space = malloc(sizeof(char) * count + 1);
-	if (space == 0)
+	if (space == NULL)
 	{
 		free(space);
 		return (NULL);
