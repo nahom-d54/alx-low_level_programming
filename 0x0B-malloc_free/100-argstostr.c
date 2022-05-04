@@ -23,7 +23,7 @@ char *argstostr(int ac, char **av)
 		}
 	}
 
-	strout = malloc(sizeof(char) * j + ac);
+	strout = malloc(sizeof(char) * j + ac + 1);
 
 	if (strout == NULL)
 	{
