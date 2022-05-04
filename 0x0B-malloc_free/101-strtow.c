@@ -10,7 +10,8 @@
 char **strtow(char *str)
 {
 	unsigned int words = 0, count = 0, l, alloc = 0;
-	char *space;
+	char **space;
+	int sp = 0;
 
 	if (str == NULL || str == "")
 		return (NULL);
@@ -35,11 +36,12 @@ char **strtow(char *str)
 		{
 			for (l = words; str[l] != ' ' && str[l] != '\0'; l++)
 			{
-				space[alloc] = str[l];
+				space[sp][alloc] = str[l];
 				alloc++;
 			}
-			space[alloc] = '\0';
+			space[sp][alloc] = '\0';
 			alloc++;
+			sp++;
 		}
 	}
 	return (space);
