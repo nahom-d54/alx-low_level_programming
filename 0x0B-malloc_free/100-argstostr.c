@@ -10,12 +10,13 @@
 char *argstostr(int ac, char **av)
 {
 	char *strout;
-	unsigned int i = 0, j = 0, k = 0, l;
+	unsigned int i = 0, j = 0, k = 0;
+	int l;
 
 	for (l = 0; l < ac; l++)
 	{
 		if (av[l] == NULL)
-			av[l] == "";
+			av[l] = "";
 		for (i = 0; av[l][i] != '\0'; i++)
 		{
 			j++;
