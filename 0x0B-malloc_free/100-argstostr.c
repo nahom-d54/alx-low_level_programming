@@ -37,9 +37,9 @@ char *argstostr(int ac, char **av)
 	for (l = 0; l < ac; l++)
 	{
 		for (i = 0; av[l][i] != '\0'; i++)
-		{	
+		{
 			strout[k] = av[l][i];
-			k++;	
+			k++;
 		}
 		strout[k] = '\n';
 		k++;
