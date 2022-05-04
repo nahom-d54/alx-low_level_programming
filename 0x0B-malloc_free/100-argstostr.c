@@ -13,6 +13,9 @@ char *argstostr(int ac, char **av)
 	unsigned int i = 0, j = 0, k = 0;
 	int l;
 
+	if (ac < 1)
+		return (NULL);
+
 	for (l = 0; l < ac; l++)
 	{
 		if (av[l] == NULL)
@@ -34,12 +37,9 @@ char *argstostr(int ac, char **av)
 	for (l = 0; l < ac; l++)
 	{
 		for (i = 0; av[l][i] != '\0'; i++)
-		{
-			if (k < j)
-			{
-				strout[k] = av[l][i];
-				k++;
-			}
+		{	
+			strout[k] = av[l][i];
+			k++;	
 		}
 		strout[k] = '\n';
 		k++;
